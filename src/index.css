@@ -60,7 +60,8 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1024px;
 
   font-family: "Inter", sans-serif;
 }
@@ -185,5 +186,4 @@ button:focus-visible {
 }
 
 .problemsContainer {
-  border: 1px solid red;
 }

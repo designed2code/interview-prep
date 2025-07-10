@@ -66,15 +66,38 @@ export const ProblemsList = () => {
                 key={index}
                 onClick={() => renderProblemListBasedOnAccordion(index)}
               >
-                <AccordionTrigger>
-                  {data.title}
-                  <Progress
-                    value={calculateProgress(index)}
-                    className="w-[300px]"
-                  />
-                  <p>
-                    {completed}/{total}
-                  </p>
+                <AccordionTrigger
+                  style={{
+                    marginTop: "1rem",
+                    border: "1px solid black",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      gap: "1rem",
+                      width: "100%",
+                    }}
+                  >
+                    <div>{data.title}</div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.5rem",
+                      }}
+                    >
+                      <Progress
+                        value={calculateProgress(index)}
+                        className="w-[200px]"
+                      />
+                      <p>
+                        {completed}/{total}
+                      </p>
+                    </div>
+                  </div>
                 </AccordionTrigger>
 
                 <AccordionContent>
