@@ -1,0 +1,46 @@
+{
+  "basics": [
+    {
+      "problem": "What is a Closure in JavaScript?",
+      "description": "Explain how closures work in JavaScript with examples. Why are they useful?",
+      "revision": ""
+    },
+    {
+      "problem": "Understanding the 'this' Keyword",
+      "description": "Describe how 'this' behaves in different contexts: global, object methods, arrow functions, and event handlers.",
+      "revision": ""
+    },
+    {
+      "problem": "Explain Hoisting",
+      "description": "What gets hoisted in JavaScript? Provide examples of variable and function hoisting.",
+      "revision": ""
+    }
+  ],
+  "jsProblems": [
+    {
+      "problem": "Implement mapLimit async function",
+      "description": "The user should create a visually appealing and mobile-friendly login form that includes email and password fields, a 'remember me' checkbox, and a submit button. The layout should adjust gracefully for mobile and desktop views.",
+      "revision": ""
+    },
+    {
+      "problem": "Execute async functions in parallel in JavaScript",
+      "description": "Implement a function in JavaScript that takes a list of async functions as input and a callback function and executes the async tasks in parallel that is all at once and invokes the callback after every task is executed.",
+      "revision": ""
+    },
+    {
+      "problem": "Execute async functions in parallel in JavaScript",
+      "description": "Implement a function in JavaScript that takes a list of async functions as input and a callback function and executes the async tasks in parallel that is all at once and invokes the callback after every task is executed.",
+      "revision": ""
+    },
+    {
+      "problem": "Execute async functions in parallel in JavaScript",
+      "description": "Implement a function in JavaScript that takes a list of async functions as input and a callback function and executes the async tasks in parallel that is all at once and invokes the callback after every task is executed.",
+      "revision": ""
+    },
+    {
+      "problem": "Execute async functions in parallel in JavaScript",
+      "description": "Implement a function in JavaScript that takes a list of async functions as input and a callback function and executes the async tasks in parallel that is all at once and invokes the callback after every task is executed.",
+      "revision": ""
+    }
+  ]
+}
