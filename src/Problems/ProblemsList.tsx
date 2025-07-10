@@ -16,8 +16,10 @@ import {
 import { Progress } from "@/components/ui/progress";
 import problems from "../data/jsProblems.json";
 import accordionTitle from "../data/accordion.json";
+import { useNavigate } from "react-router-dom";
 export const ProblemsList = () => {
   const [accordionIndex, setAccordionIndex] = useState(0);
+  const navigate = useNavigate();
 
   const [completedMap, setCompletedMap] = useState({
     0: new Set(), // basics
@@ -70,6 +72,7 @@ export const ProblemsList = () => {
                   style={{
                     marginTop: "1rem",
                     border: "1px solid black",
+                    padding: "1rem",
                   }}
                 >
                   <div
@@ -100,7 +103,7 @@ export const ProblemsList = () => {
                   </div>
                 </AccordionTrigger>
 
-                <AccordionContent>
+                <AccordionContent className="mt-4">
                   <Table>
                     <TableHeader>
                       <TableRow>
@@ -120,7 +123,12 @@ export const ProblemsList = () => {
                               onChange={() => handleCheckboxToggle(index, i)}
                             />
                           </TableCell>
-                          <TableCell className="font-medium">
+                          <TableCell
+                            className="font-medium pointer cursor-pointer"
+                            onClick={() => {
+                              navigate(`/problem-details/${data.problem}`);
+                            }}
+                          >
                             {data.problem}
                           </TableCell>
                           <TableCell>+</TableCell>
