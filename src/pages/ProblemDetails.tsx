@@ -1,14 +1,22 @@
-import React from "react";
-
+import { CodeBlock } from "@/components/ui/codeblock";
 export const ProblemDetails = () => {
+  const codeSnippet = `// Input:
+executeParallel([asyncTask(3), asyncTask(1), asyncTask(2)], (result) => {
+  console.log(result);
+});
+
+// Output:
+// output in the order of execution
+[2, 1, 3]`;
   return (
     <>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, similique
-        nihil maiores eveniet pariatur earum ab illum, est repellendus
-        voluptatem, tempora nostrum rem nisi unde asperiores. Nostrum ducimus
-        natus quo.
+        Implement a function in JavaScript that takes a list of async functions
+        as input and a callback function and executes the async tasks in
+        parallel that is all at once and invokes the callback after every task
+        is executed.
       </p>
+      <CodeBlock language="javascript" code={codeSnippet} />
     </>
   );
 };
